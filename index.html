@@ -1,17 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>THISISFORYOUK-98</title>
+    <title>Página de Carga con Video</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <img src="Clancy.PNG">
-    <img src="TAPE1.png" >
-    <img src="TAPE2.png">
-
+    <div class="video-background">
+        <video autoplay muted loop id="background-video">
+            <source src="Cargando.mp4" type="video/mp4">
+            
+        </video>
+    </div>
+    <div id="loader" class="loader"></div>
+    <div id="content" class="content">
+        <div class="container">
+            <form id="passwordForm">
+                <h2>Ingrese la Contraseña</h2>
+                <input type="password" id="password" placeholder="Contraseña" required>
+                <button type="submit">Enviar</button>
+                <p id="error-message" class="error-message"></p>
+            </form>
+        </div>
+    </div>
     
-    
+    <script src="script.js"></script>
 </body>
 </html>
